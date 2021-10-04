@@ -1,6 +1,28 @@
 @charset "UTF-8";
-/* CSS Document */
+
+body {
+	font-family: "Monaco";
+	margin: 0;
+	padding: 0;
+}
+
 .topbar {
-	margin: auto;
-	background: red;
+	width: 100%;
+	height: 50px;
+	margin-top: 0;
+	background: mediumseagreen;
+}
+
+.topbar a {
+	color: white;
+	text-decoration: none;
+}
+
+.topbar ul {
+ 	list-style-type: none;
+}
+
+.topbar li {
+	display: inline;
+	padding: 5px;
 }
