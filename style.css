@@ -86,10 +86,10 @@ body {
 	background: rgba(60,179,112,0.20);
 	display: block;
 	float: left;
-	margin: 0 10px 10px 0;
-	padding: 5px 5px 0 0;
+	margin: 0 40px 10px 0;
+	padding: 5px 5px 100% 0;
 	width: 175px;
-	border-bottom-right-radius: 75px;
+	height: 100%;
 }
 
 #sidenav ul {
