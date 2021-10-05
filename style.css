@@ -73,6 +73,13 @@ body {
 	font-size: 17px;
 	border: none;
 	cursor: pointer;
+	border-radius: 5px;
+}
+
+.topbar .searchbar button img {
+	position: relative;
+	width: 15px;
+	top: 2px;
 }
 
 .nav {
