@@ -1,6 +1,11 @@
 @charset "UTF-8";
 * {box-sizing: border-box;}
 
+html {
+	position: relative;
+	min-height: 100%;
+}
+
 body {
 	font-family: 'Muli', sans-serif;
 	font-weight: 200;
@@ -9,6 +14,7 @@ body {
 	line-height: 30px;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 60px;
 }
 
 .topbar {
@@ -75,13 +81,10 @@ body {
 
 footer {
 	position: absolute;
-	left: 0;
 	bottom: 0;
 	width: 100%;
 	background-color: #333333;
 	height: 50px;
-	line-height: 50px;
-	margin-bottom: -50px;
 }
 
 footer p {
