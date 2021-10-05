@@ -113,9 +113,15 @@ body {
 	border-bottom: 1px dotted black;
 }
 
-#sidebar .active {
-	color: red;
-	border-bottom: 1px dotted red;
+#sidenav .active {
+	font-weight: 520;
+	position: relative;
+	right: 10px;
+}
+
+#sidenav .active:hover{
+	border-bottom: none;
+	cursor: default;
 }
 
 footer {
