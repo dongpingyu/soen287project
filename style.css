@@ -14,7 +14,7 @@ body {
 	line-height: 30px;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 60px;
+	margin-bottom: 100px;
 }
 
 div {
@@ -163,6 +163,7 @@ div {
 .container {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
+	margin-bottom: 30px;
 }
 
 .productgrid {
