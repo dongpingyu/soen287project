@@ -164,6 +164,7 @@ div {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	margin-bottom: 30px;
+	height: auto;
 }
 
 .productgrid {
