@@ -124,6 +124,37 @@ body {
 	cursor: default;
 }
 
+.accordion {
+	color: #444;
+	cursor: pointer;
+	padding: 5px 15px;
+	margin-top: 25px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 20px;
+	transition: 0.4s;
+	border-bottom: 1.4px solid #333;
+}
+
+.accordion.active, .accordion:hover {
+	border-bottom: 3px solid #3CB370;
+}
+
+.product {
+	padding: 0 18px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
+}
+
+.main {
+	float: left;
+	margin-top: 20px;
+	width: 80%;
+}
+
 footer {
 	position: absolute;
 	bottom: 0;
