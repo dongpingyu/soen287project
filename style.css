@@ -198,10 +198,18 @@ div {
 	text-decoration: none;
 	color: black;
 	right: 30px;
+	top: -1px;
 }
 
 .productgrid a:hover {
-	border-bottom: 1px dashed black;
+	color: #3CB370;
+	text-shadow: 0px 0px 3px #999;
+}
+
+.dollarsign {
+	color: #3CB370;
+	text-shadow: 0px 0px 2px #aaa;
+	font-weight: 800;
 }
 
 .productname {
