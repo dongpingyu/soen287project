@@ -106,7 +106,7 @@ div {
 	padding: 0px 40px 0 0;
 	flex-basis: auto;
 	box-shadow: 2px 0px 4px rgba(0,0,0,.25);
-	z-index: 1;
+	z-index: 2;
 }
 
 #sidenav ul {
@@ -163,10 +163,13 @@ div {
 	-webkit-transition: 0.4s;
 	-o-transition: 0.4s;
 	border-bottom: 1.4px solid #333;
+	box-shadow: 0 2px 2px rgba(0,0,0,.25);
+	z-index: 1;
 }
 
 .accordion.active, .accordion:hover {
 	border-bottom: 3px solid #3CB370;
+	box-shadow: 0 3px 3px rgba(0,0,0,.30);
 }
 
 .products {
@@ -195,19 +198,22 @@ div {
 	background: #fff;
 	aspect-ratio: 1;
 	width: 340px;
-	height: auto;
+	height: 340px;
 	box-shadow: 0px 2px 4px rgba(0,0,0,.25);
 }
 
 .productgrid img {
-	width: 90%;
+	max-height: 60%;
+  	min-width: 60%;
+	object-fit: contain;
+	vertical-align: center;
 }
 
 .productbuy {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 	width: 100%;
 	background: rgba(0,0,0,.05);
 	border-radius: 10px;
@@ -215,6 +221,19 @@ div {
 
 .price {
 	padding-left: 10px;
+}
+
+.productgrid input[type=number] {
+	padding: 4px 6px;
+	margin: 0;
+	font-size: 19px;
+	border-radius: 10px;
+	border: 3px solid mediumseagreen;
+}
+
+.productgrid input[type=number]:focus {
+	box-shadow: 0 0 5px rgba(0,0,0,.25);
+	outline-style: none;
 }
 
 .productgrid a {
@@ -227,7 +246,7 @@ div {
 }
 
 .productgrid a:hover {
-	box-shadow: 1pt 1pt 2px rgba(0,0,0,.25);
+	box-shadow: 0 0 5px rgba(0,0,0,.25);
 }
 
 .productgrid a:active {
