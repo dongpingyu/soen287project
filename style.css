@@ -26,25 +26,56 @@ div {
 	overflow: hidden;
 	background: mediumseagreen;
 	border-bottom: 2px solid rgba(0,0,0,.25);
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .topbar #logo {
 	width: 217px;
 	height: 50px;
 	scale: 2;
-	background: url("logo.png") no-repeat center center;
+	background: url("logo.png") no-repeat center;
 	background-size: auto 25px;
 	margin: 5px 0 0 15px;
 	padding: 0;
 }
 
+.topbar #profileicon {
+	width: 50px;
+	height: 50px;
+	background: url("icons/profile.png") no-repeat center;
+	background-size: auto 38px;
+	margin: 5px 0 0 0;
+	transition: 0.2s ease-in-out;
+}
+
+.topbar #profileicon:hover {
+	transform: matrix(1.1,0,0,1.1,0,1);
+}
+
+.topbar #profileicon:active {
+	transform: scale(0.9);
+}
+
+.topbar #carticon {
+	width: 50px;
+	height: 50px;
+	background: url("icons/cart.png") no-repeat center;
+	background-size: auto 40px;
+	margin: 5px 0 0 0;
+	transition: 0.2s ease-in-out;
+}
+
+.topbar #carticon:hover {
+	transform: matrix(1.1,0,0,1.1,0,1);
+}
+
+.topbar #carticon:active {
+	transform: scale(0.9);
+}
+
 .topbar a {
 	color: white;
-	text-align: center;
-	text-decoration: none;
-	font-weight: 400;
-	font-size: 19px;
+	outline: none;
 }
 
 .topbar a:hover {
@@ -63,26 +94,44 @@ div {
 	width: 80%;
 	border: none;
 	font-size: 17px;
-	border-radius: 5px;
+	border-radius: 12px;
 	margin: 10px 5px 10px 0;
 	padding: 10px;
+}
+
+.topbar .searchbar input[type=text]:focus {
+	outline: none;
+	box-shadow: 0 0 5px rgba(0,0,0,.20);
 }
 
 .topbar .searchbar button {
 	width: 50px;
 	background: rgba(0,0,0,0.25);
 	margin: 10px 0 10px 0;
-	color: white;
-	font-size: 17px;
 	border: none;
 	cursor: pointer;
-	border-radius: 5px;
+	transition: 0.4s ease-in-out;
+	border-radius: 12px;
+}
+
+.topbar .searchbar button:hover {
+	background: rgba(0,0,0,0.35);
 }
 
 .topbar .searchbar button img {
 	position: relative;
-	width: 15px;
+	width: 25px;
 	top: 2px;
+	transform: scale();
+	transition: 0.2s ease-in-out;
+}
+
+.topbar .searchbar button:hover img {
+	transform: scale(1.1);
+}
+
+.topbar .searchbar button:active img {
+	transform: scale(0.9);
 }
 
 .topbar .buttons {
@@ -159,17 +208,15 @@ div {
 	text-align: left;
 	outline: none;
 	font-size: 20px;
-	transition: 0.4s;
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
+	transition: 0.4s ease-in-out;
 	border-bottom: 1.4px solid #333;
-	box-shadow: 0 2px 2px rgba(0,0,0,.25);
+	box-shadow: 0 2px 2px rgba(0,0,0,.20);
 	z-index: 1;
 }
 
 .accordion.active, .accordion:hover {
 	border-bottom: 3px solid #3CB370;
-	box-shadow: 0 3px 3px rgba(0,0,0,.30);
+	box-shadow: 0 3px 3px rgba(0,0,0,.20);
 }
 
 .products {
@@ -183,6 +230,7 @@ div {
 	padding: 20px;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-content: center;
 	background: #eee;
 	border-radius: 0px 0px 10px 10px;
 }
@@ -274,8 +322,6 @@ footer {
 }
 
 footer p {
-	position: relative;
-	top: -2px;
 	color: white;
 	font-size: 15px;
 	text-align: center;
