@@ -144,6 +144,7 @@ div {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+	margin: 0 0 10px 0;
 }
 
 .accordion {
@@ -168,9 +169,9 @@ div {
 	border-bottom: 3px solid #3CB370;
 }
 
-.product {
+.products {
 	padding: 0 18px;
-	display: none;
+	display: block;
 	background-color: white;
 }
 
