@@ -1,0 +1,117 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	font-family: 'Muli', sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 100px;
+}
+
+.topbar {
+	overflow: hidden;
+	background: mediumseagreen;
+	border-bottom: 2px solid rgba(0,0,0,.25);
+}
+
+.topbar #logo {
+	float: left;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url("logo.png") no-repeat left center;
+	background-size: 50px auto;
+	margin: 5px 0px 0px 30px;
+	padding: 0;
+}
+
+.topbar a {
+	float: right;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 400;
+	padding: 14px 16px;
+	font-size: 19px;
+}
+
+.topbar a:hover {
+	text-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
+.topbar .searchbar {
+	float: right;
+}
+
+.topbar .searchbar input[type=text] {
+	float: right;
+	padding: 6px;
+	border: none;
+	margin-top: 12px;
+	margin-left: 20px;
+	margin-right: 6px;
+	font-size: 17px;
+	border-radius: 5px;
+}
+
+.topbar .searchbar button {
+	float: right;
+	padding: 6px 10px;
+	margin-top: 12px;
+	margin-right: 16px;
+	background: rgba(0,0,0,0.25);
+	color: white;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.topbar .searchbar button img {
+	position: relative;
+	width: 15px;
+	top: 2px;
+}
+
+.centerText {
+	text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    width: 80%;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:40%;
+}
+
+.dollarsign {
+	color: #3CB370;
+	text-shadow: 0px 0px 2px #aaa;
+	font-weight: 800;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #333333;
+	height: 50px;
+}
+
+footer p {
+	position: relative;
+	top: -2px;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 0px 2px 3px #000;
+}
