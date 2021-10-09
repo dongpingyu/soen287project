@@ -347,6 +347,7 @@ div {
 
 .cart-content ul li:last-child {
 	box-sizing: content-box;
+	height: 88px;
 	border-bottom: 3px solid mediumseagreen;
 	box-shadow: 0 1pt 0 0 rgb(46,134,85);
 	padding-bottom: 30px;
