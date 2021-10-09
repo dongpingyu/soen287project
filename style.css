@@ -30,16 +30,6 @@ div {
 	align-items: center;
 }
 
-/*.topbar #logo {
-	width: 217px;
-	height: 50px;
-	scale: 2;
-	background: url("logo.png") no-repeat center;
-	background-size: auto 30px;
-	margin: 5px 0 0 15px;
-	padding: 0;
-}*/
-
 .topbar #logo img {
 	height: 90%;
 	width: 90%;
@@ -99,55 +89,64 @@ div {
 .topbar .searchbar {
 	display: flex;
 	flex-flow: row-reverse;
-	width: 60%;
 	justify-content: center;
-	position: relative;
-	top: 2px;
+	width: 60%;
+	height: 40px;
 }
 
 .topbar .searchbar input[type=text] {
-	width: 80%;
+	width: 50%;
+	height: 100%;
 	border: none;
-	font-size: 17px;
-	border-radius: 12px;
-	margin: 10px 5px 10px 0;
-	padding: 10px;
+	font-size: 1em;
+	text-align: center;
+	text-transform: lowercase;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
 .topbar .searchbar input[type=text]:focus {
 	outline: none;
-	box-shadow: 0 0 5px rgba(0,0,0,.20);
+}
+
+.topbar .searchbar input[type=text]:focus::placeholder {
+	color: #fff;
 }
 
 .topbar .searchbar button {
-	width: 50px;
-	background: rgba(0,0,0,0.25);
-	margin: 10px 5px;
+	width: 40px;
+	height: 100%;
+	background: rgb(46,134,85);
 	border: none;
 	cursor: pointer;
-	transition: 0.4s ease-in-out;
-	border-radius: 12px;
+	transition: all 0.2s;
+	border: 2px solid white;
+	border-radius: 50%;
+	box-shadow: -8px 0 10px rgba(0,0,0,.15);
+	z-index: 1;
 }
 
 .topbar .searchbar button:hover {
-	background: rgba(0,0,0,0.35);
+	background: #fff;
+	border-color: rgb(46,134,85);
 }
 
-.topbar .searchbar button img {
-	position: relative;
-	width: 25px;
-	top: 2px;
-	transform: scale();
-	transition: 0.2s ease-in-out;
-}
+ .topbar .searchbar button ion-icon {
+	 font-size: 2em;
+	 color: white;
+ }
 
-.topbar .searchbar button:hover img {
-	transform: scale(1.1);
-}
+ .topbar .searchbar button:hover ion-icon {
+	 color: rgb(46,134,85);
+ }
 
-.topbar .searchbar button:active img {
-	transform: scale(0.9);
-}
+ .topbar .searchbar div {
+	 background: #fff;
+	 width: 40px;
+	 height: 40px;
+	 transform: translateX(-60px);
+	 z-index: 0;
+ }
 
 .main {
 	display: flex;
