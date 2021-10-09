@@ -245,7 +245,6 @@ div {
 	align-content: flex-start;
 	background: #eee;
 	border-radius: 0px 0px 10px 10px;
-	min-width: fit-content;
 }
 
 .product-card {
