@@ -282,6 +282,7 @@ div {
 	font-size: 19px;
 	border-radius: 10px;
 	border: 3px solid mediumseagreen;
+	transform: translateX(-15px);
 }
 
 .productgrid input[type=number]:focus {
@@ -295,7 +296,7 @@ div {
 	padding: 3px 5px;
 	background: mediumseagreen;
 	border-radius: 10px;
-	font-weight: 400;
+	font-size: 1.3em;
 }
 
 .productgrid a:hover {
