@@ -116,28 +116,28 @@ div {
 .topbar .searchbar button {
 	width: 40px;
 	height: 100%;
-	background: rgb(46,134,85);
+	background: white;
 	border: none;
 	cursor: pointer;
 	transition: all 0.2s;
-	border: 2px solid white;
+	border: 2px solid rgb(46,134,85);
 	border-radius: 50%;
 	box-shadow: -8px 0 10px rgba(0,0,0,.15);
 	z-index: 1;
 }
 
 .topbar .searchbar button:hover {
-	background: #fff;
-	border-color: rgb(46,134,85);
+	background: rgb(46,134,85);
+	border-color: white;
 }
 
  .topbar .searchbar button ion-icon {
 	 font-size: 2em;
-	 color: white;
+	 color: rgb(46,134,85);
  }
 
  .topbar .searchbar button:hover ion-icon {
-	 color: rgb(46,134,85);
+	 color: white;
  }
 
  .topbar .searchbar div {
