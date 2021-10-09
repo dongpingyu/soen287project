@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Ivent — online grocery shopping</title>
+	<title>Iventro — online grocery shopping</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,8 +14,8 @@
 			<input type="text" placeholder="Search a product..">
 		</div>
 		<div class="buttons">
-			<a href="#">Cart (2)</a>
-			<a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+			<a href="cart.html">Cart (15)</a>
+			<a href="cart.html"><ion-icon name="cart-outline"></ion-icon></a>
 		</div>
 	</header>
 	<div class="main">
@@ -30,9 +30,9 @@
 		</div>
 		<div class="content">
 			<button class="accordion active">Fruits &amp; Vegetables</button>
-			<div class="products">
+			<div class="pre-container">
 				<div class="container">
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Banana</span>
 						<img src="./products/banana.jpg">
 						<div class="productbuy">
@@ -41,7 +41,7 @@
 							<a href="#add2cart"><ion-icon name="bag-add-outline"></ion-icon></a>
 						</div>
 					</div>
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Apple</span>
 						<img src="./products/apple.jpeg">
 						<div class="productbuy">
@@ -50,7 +50,7 @@
 							<a href="#add2cart"><ion-icon name="bag-add-outline"></ion-icon></a>
 						</div>
 					</div>
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Carrot</span>
 						<img src="./products/carrot.png">
 						<div class="productbuy">
@@ -62,9 +62,9 @@
 				</div>
 			</div>
 			<button class="accordion active">Dairy</button>
-			<div class="products">
+			<div class="pre-container">
 				<div class="container">
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Milk</span>
 						<img src="./products/milk.jpeg">
 						<div class="productbuy">
@@ -73,7 +73,7 @@
 							<a href="#add2cart"><ion-icon name="bag-add-outline"></ion-icon></a>
 						</div>
 					</div>
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Butter</span>
 						<img src="./products/butter.jpeg">
 						<div class="productbuy">
@@ -82,7 +82,7 @@
 							<a href="#add2cart"><ion-icon name="bag-add-outline"></ion-icon></a>
 						</div>
 					</div>
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Yogurt</span>
 						<img src="./products/yogurt.jpeg">
 						<div class="productbuy">
@@ -94,9 +94,9 @@
 				</div>
 			</div>
 			<button class="accordion active">Meat</button>
-			<div class="products">
+			<div class="pre-container">
 				<div class="container">
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Chicken</span>
 						<img src="./products/chicken.jpeg">
 						<div class="productbuy">
@@ -105,7 +105,7 @@
 							<a href="#add2cart"><ion-icon name="bag-add-outline"></ion-icon></a>
 						</div>
 					</div>
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Salmon</span>
 						<img src="./products/salmon.jpeg">
 						<div class="productbuy">
@@ -114,7 +114,7 @@
 							<a href="#add2cart"><ion-icon name="bag-add-outline"></ion-icon></a>
 						</div>
 					</div>
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Steak</span>
 						<img src="./products/steak.jpeg">
 						<div class="productbuy">
@@ -126,9 +126,9 @@
 				</div>
 			</div>
 			<button class="accordion active">Bread</button>
-			<div class="products">
+			<div class="pre-container">
 				<div class="container">
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Whole Wheat Bread</span>
 						<img src="./products/wwbread.jpeg">
 						<div class="productbuy">
@@ -137,7 +137,7 @@
 							<a href="#add2cart"><ion-icon name="bag-add-outline"></ion-icon></a>
 						</div>
 					</div>
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">White Bread</span>
 						<img src="./products/wbread.jpeg">
 						<div class="productbuy">
@@ -146,7 +146,7 @@
 							<a href="#add2cart"><ion-icon name="bag-add-outline"></ion-icon></a>
 						</div>
 					</div>
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Gluten Free Bread</span>
 						<img src="./products/gfbread.jpeg">
 						<div class="productbuy">
@@ -158,9 +158,9 @@
 				</div>
 			</div>
 			<button class="accordion active">Snacks</button>
-			<div class="products">
+			<div class="pre-container">
 				<div class="container">
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Oreo Cookies</span>
 						<img src="./products/oreo.jpeg">
 						<div class="productbuy">
@@ -169,7 +169,7 @@
 							<a href="#add2cart"><ion-icon name="bag-add-outline"></ion-icon></a>
 						</div>
 					</div>
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Nacho Cheese Doritos</span>
 						<img src="./products/doritos.jpeg">
 						<div class="productbuy">
@@ -178,7 +178,7 @@
 							<a href="#add2cart"><ion-icon name="bag-add-outline"></ion-icon></a>
 						</div>
 					</div>
-					<div class="productgrid">
+					<div class="product-card">
 						<span class="productname">Beef Jerky</span>
 						<img src="./products/beef-jerky.jpeg">
 						<div class="productbuy">

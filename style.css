@@ -219,12 +219,19 @@ div {
 	z-index: 1;
 }
 
-.accordion.active, .accordion:hover {
+.accordion.active, .accordion.inactive, .accordion:hover {
 	border-bottom: 3px solid #3CB370;
-	box-shadow: 0 3px 3px rgba(0,0,0,.20);
+	box-shadow: 0 2px 3px rgba(0,0,0,.20);
 }
 
-.products {
+.accordion.inactive {
+	text-align: center;
+	font-size: 2em;
+	padding-bottom: 25px;
+	pointer-events: none;
+}
+
+.pre-container {
 	padding: 0 18px;
 	display: block;
 	background-color: white;
@@ -240,7 +247,7 @@ div {
 	border-radius: 0px 0px 10px 10px;
 }
 
-.productgrid {
+.product-card {
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between;
@@ -255,7 +262,7 @@ div {
 	box-shadow: 0px 2px 4px rgba(0,0,0,.25);
 }
 
-.productgrid img {
+.product-card img {
 	max-height: 60%;
   	min-width: 60%;
 	object-fit: contain;
@@ -264,6 +271,7 @@ div {
 
 .productbuy {
 	display: flex;
+	flex-wrap: nowrap;
 	flex-flow: row;
 	justify-content: space-between;
 	align-items: center;
@@ -273,10 +281,11 @@ div {
 }
 
 .price {
+	white-space: pre;
 	padding-left: 10px;
 }
 
-.productgrid input[type=number] {
+.productbuy input[type=number] {
 	padding: 4px 6px;
 	margin: 0;
 	font-size: 19px;
@@ -285,12 +294,12 @@ div {
 	transform: translateX(-15px);
 }
 
-.productgrid input[type=number]:focus {
+.productbuy input[type=number]:focus {
 	box-shadow: 0 0 5px rgba(0,0,0,.25);
 	outline-style: none;
 }
 
-.productgrid a {
+.productbuy a {
 	text-decoration: none;
 	color: #fff;
 	padding: 3px 5px;
@@ -299,11 +308,11 @@ div {
 	font-size: 1.3em;
 }
 
-.productgrid a:hover {
+.productbuy a:hover {
 	box-shadow: 0 0 5px rgba(0,0,0,.25);
 }
 
-.productgrid a:active {
+.productbuy a:active {
 	background: rgb(44, 138, 86);
 	box-shadow: none;
 }
@@ -314,10 +323,130 @@ div {
 	font-weight: 800;
 }
 
-.productname {
-	position: relative;
-	float: left;
-	top: -10px;
+.cart-content {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}
+
+.cart-content ul {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.cart-content ul li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 5em;
+	border-bottom: 2px dashed #888;
+	padding: 0 0 10px 0;
+	margin-bottom: 2em;
+}
+
+.cart-content ul li:last-child {
+	box-sizing: content-box;
+	border-bottom: 3px solid mediumseagreen;
+	box-shadow: 0 1pt 0 0 rgb(46,134,85);
+	padding-bottom: 30px;
+}
+
+.cart-content .cart-content-left {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+	width: 70%;
+	margin-right: 30px;
+}
+
+.cart-content ul li .cart-content-left .productname {
+	white-space: pre;
+	font-size: 1.1em;
+	margin-left: 2em;
+	width: fit-content;
+}
+
+.cart-content ul li .cart-content-left img {
+	object-fit: contain;
+	background: #fff;
+	padding: 5px;
+	max-height: 100%;
+	border-radius: 20%;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.20);
+}
+
+.cart-content .productbuy {
+	width: 30%;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.20);
+}
+.cart-content .productbuy input[type=number] {
+	transform: translateX(0);
+}
+
+.cart-content .productbuy a ion-icon {
+	transform: translateY(2px);
+}
+
+.cart-content .cart-content-bottom {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.4em;
+	padding-bottom: 30px;
+}
+
+.cart-content .cart-content-bottom .total {
+	color: #888;
+	font-weight: 400;
+}
+
+.cart-content .cart-content-bottom .total .price {
+	color: #000;
+	font-weight: 500;
+	padding-left: 0.3em;
+}
+
+.cart-content .cart-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cart-content .cart-nav a {
+	display: flex;
+	align-items: center;
+	background: white;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s;
+	border: 2px solid rgb(46,134,85);
+	border-radius: 30px;
+	font-size: 1.3em;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.20);
+	color: rgb(46,134,85);
+	padding: 10px;
+	text-decoration: none;
+}
+
+.cart-content .cart-nav a:hover {
+	background: rgb(46,134,85);
+	border-color: white;
+	color: white;
+}
+
+.cart-content .cart-nav a ion-icon {
+	margin: 0 10px 0 0;
+	font-size: 1.2em;
+}
+
+
+.cart-content .cart-nav a:last-child {
+	flex-direction: row-reverse;
+}
+
+.cart-content .cart-nav a:last-child ion-icon {
+	margin: 0 0 0 10px;
 }
 
 footer {
