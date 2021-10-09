@@ -27,50 +27,68 @@ div {
 	background: mediumseagreen;
 	border-bottom: 2px solid rgba(0,0,0,.25);
 	justify-content: space-around;
+	align-items: center;
 }
 
-.topbar #logo {
+/*.topbar #logo {
 	width: 217px;
 	height: 50px;
 	scale: 2;
 	background: url("logo.png") no-repeat center;
-	background-size: auto 25px;
+	background-size: auto 30px;
 	margin: 5px 0 0 15px;
 	padding: 0;
+}*/
+
+.topbar #logo img {
+	height: 90%;
+	width: 90%;
+	object-fit: contain;
 }
 
-.topbar #profileicon {
-	width: 50px;
-	height: 50px;
-	background: url("icons/profile.png") no-repeat center;
-	background-size: auto 38px;
-	margin: 5px 0 0 0;
-	transition: 0.2s ease-in-out;
+.topbar #logo {
+	display: flex;
+	margin: 0;
+	width: 20%;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
 }
 
-.topbar #profileicon:hover {
-	transform: matrix(1.1,0,0,1.1,0,1);
+.topbar .buttons {
+	width: 20%;
+	height: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: #fff;
 }
 
-.topbar #profileicon:active {
-	transform: scale(0.9);
+.topbar .buttons a:nth-child(1) {
+	position: relative;
+	top: 1px;
+	font-size: 0.75em;
+	font-weight: 500;
+	text-transform: lowercase;
+	text-decoration: none;
+	margin-right: -5px;
+	background: rgba(0,0,0,0.25);
+	padding: 0 10px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
 }
 
-.topbar #carticon {
-	width: 50px;
-	height: 50px;
-	background: url("icons/cart.png") no-repeat center;
-	background-size: auto 40px;
-	margin: 5px 0 0 0;
-	transition: 0.2s ease-in-out;
-}
-
-.topbar #carticon:hover {
-	transform: matrix(1.1,0,0,1.1,0,1);
-}
-
-.topbar #carticon:active {
-	transform: scale(0.9);
+.topbar .buttons ion-icon {
+	position: relative;
+	top: 4px;
+	font-size: 1.3em;
+	color: mediumseagreen;
+	background: #fff;
+	border-radius: 50%;
+	padding: 8px;
+	box-shadow: 0 0 4px 1px rgba(0,0,0,.15);
 }
 
 .topbar a {
@@ -78,16 +96,13 @@ div {
 	outline: none;
 }
 
-.topbar a:hover {
-	text-shadow: 0 0 5px rgba(255,255,255,0.5);
-}
-
 .topbar .searchbar {
 	display: flex;
 	flex-flow: row-reverse;
 	width: 60%;
 	justify-content: center;
-	flex-shrink: 0;
+	position: relative;
+	top: 2px;
 }
 
 .topbar .searchbar input[type=text] {
@@ -107,7 +122,7 @@ div {
 .topbar .searchbar button {
 	width: 50px;
 	background: rgba(0,0,0,0.25);
-	margin: 10px 0 10px 0;
+	margin: 10px 5px;
 	border: none;
 	cursor: pointer;
 	transition: 0.4s ease-in-out;
@@ -134,14 +149,6 @@ div {
 	transform: scale(0.9);
 }
 
-.topbar .buttons {
-	display: flex;
-	width: 20%;
-	flex-flow: row;
-	justify-content: space-around;
-	line-height: 60px;
-}
-
 .main {
 	display: flex;
 	flex-direction: row;
@@ -153,7 +160,6 @@ div {
 	background: rgba(60,179,112,0.20);
 	margin: 0;
 	padding: 0px 40px 0 0;
-	flex-basis: auto;
 	box-shadow: 2px 0px 4px rgba(0,0,0,.25);
 	z-index: 2;
 }
@@ -319,6 +325,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	background-color: #333333;
+	white-space: nowrap;
 }
 
 footer p {
@@ -326,4 +333,5 @@ footer p {
 	font-size: 15px;
 	text-align: center;
 	text-shadow: 0px 2px 3px #000;
+	padding: 0 20px;
 }
