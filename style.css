@@ -247,6 +247,69 @@ div {
 	border-radius: 0px 0px 10px 10px;
 }
 
+.product-container {
+	display: flex;
+	padding: 20px;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #fff;
+	border-radius: 50px;
+	height: fit-content;
+	width: 60%;
+	box-shadow: 0 1px 3px rgba(0,0,0,.20);
+}
+
+.product-container .product {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+}
+
+.product-container img {
+	width: 50%;
+	height: auto;
+}
+
+.product-container .description {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	min-width: 300px;
+	height: 100%;
+}
+
+.product-container .description .accordion.active {
+	font-size: 1.3em;
+	border-radius: 20px 20px 0 0;
+}
+
+.product-container .description .accordion {
+	border-radius: 20px;
+	transition: none;
+	margin-top: 0;
+	background: #eee;
+	width: 100%;
+	font-weight: 400;
+}
+
+.product-container .description p {
+	background: #f9f9f9;
+	margin: 0;
+	padding: 0 1em 0.5em 1em;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.20);
+	font-size: 0.75em;
+}
+
+.product-container .productbuy {
+	width: fit-content;
+	margin-top: 1.5em;
+}
+
 .product-card {
 	display: flex;
 	flex-flow: column;
@@ -262,11 +325,15 @@ div {
 	box-shadow: 0px 2px 4px rgba(0,0,0,.25);
 }
 
+.product-card a {
+	height: 60%;
+	width: 60%;
+}
+
 .product-card img {
-	max-height: 60%;
-  	min-width: 60%;
-	object-fit: contain;
-	vertical-align: center;
+	height: 100%;
+  	width: 100%;
+	object-fit: cover;
 }
 
 .productbuy {
@@ -282,7 +349,7 @@ div {
 
 .price {
 	white-space: pre;
-	padding-left: 10px;
+	padding: 0 0.5em;
 }
 
 .productbuy input[type=number] {
@@ -299,7 +366,9 @@ div {
 	outline-style: none;
 }
 
-.productbuy a {
+.productbuy button {
+	margin: 0;
+	border: none;
 	text-decoration: none;
 	color: #fff;
 	padding: 3px 5px;
@@ -308,13 +377,17 @@ div {
 	font-size: 1.3em;
 }
 
-.productbuy a:hover {
+.productbuy button:hover {
 	box-shadow: 0 0 5px rgba(0,0,0,.25);
 }
 
-.productbuy a:active {
+.productbuy button:active {
 	background: rgb(44, 138, 86);
 	box-shadow: none;
+}
+
+.productbuy ion-icon {
+	transform: translateY(2px);
 }
 
 .dollarsign {
