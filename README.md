@@ -12,11 +12,11 @@ _**Goal:** create an online grocery store._
 - [x] home page
 - [x] aisles 
 - [x] all products 
-- [ ] product description 
+- [x] product description 
 - [x] shopping cart
 - [x] checkout
-- [ ] user login 
-- [ ] sign up 
+- [x] user login 
+- [x] sign up 
 - [ ] _backend_ product list
 - [ ] _backend_ edit product
 - [ ] _backend_ user list
