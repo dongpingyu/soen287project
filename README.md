@@ -14,7 +14,7 @@ _**Goal:** create an online grocery store._
 - [x] all products 
 - [ ] product description 
 - [x] shopping cart
-- [ ] checkout
+- [x] checkout
 - [ ] user login 
 - [ ] sign up 
 - [ ] _backend_ product list
