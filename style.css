@@ -68,6 +68,7 @@ div {
 	padding: 0 10px;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
+	white-space: nowrap;
 }
 
 .topbar .buttons ion-icon {
