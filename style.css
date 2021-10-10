@@ -393,20 +393,33 @@ div {
 
 .cart-content .cart-content-bottom {
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.cart-content .cart-content-bottom-right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	font-size: 1.4em;
 	padding-bottom: 30px;
 }
 
-.cart-content .cart-content-bottom .total {
+.cart-content .cart-content-bottom .subtotal {
+	color: #aaa;
+	font-weight: 200;
+	font-size: 17px;
+	font-style: italic;
+}
+
+.cart-content .cart-content-bottom-right .total {
 	color: #888;
 	font-weight: 400;
 }
 
-.cart-content .cart-content-bottom .total .price {
+.cart-content .cart-content-bottom-right .total .price {
 	color: #000;
 	font-weight: 500;
-	padding-left: 0.3em;
 }
 
 .cart-content .cart-nav {
@@ -448,6 +461,28 @@ div {
 
 .cart-content .cart-nav a:last-child ion-icon {
 	margin: 0 0 0 10px;
+}
+
+.receipt-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	background: #fff;
+	margin: 20px 0;
+	border-radius: 50px;
+	min-width: 700px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.20);
+}
+
+.receipt-card h1 {
+	border-bottom: 2px solid mediumseagreen;
+	box-shadow: 0 1pt 0 0 rgb(46,134,85);
+	padding: 20px 30%;
+}
+
+.receipt-card img {
+	height: 44px;
 }
 
 footer {
