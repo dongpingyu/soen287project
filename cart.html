@@ -10,11 +10,10 @@
 </head>
 
 <body>
-    <div class="bg"></div>
     <div class="main">
         <div class="header">
             <div class="top">
-                <a id="logo" href="index.html"><img src="./logo.png"></a>
+                <a id="logo" href="backstore/products.html"><img src="./logo.png"></a>
                 <div class="searchbar">
                     <div></div>
                     <button type="submit">
@@ -152,25 +151,23 @@
                             </div>
                         </div>
                         <div class="cart-nav">
-                            <a href="#">
+                            <button onclick="history.back()">
                                 <ion-icon name="return-down-back-outline"></ion-icon>
-                                Return
-                            </a>
-                            <a href="checkout.html">
+                                return
+                            </button>
+                            <button onclick="window.open('checkout.html','_self')">
                                 <ion-icon name="return-down-forward-outline"></ion-icon>
-                                Checkout
-                            </a>
+                                checkout
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <footer>
-            <p>SOEN 287 — Group Project — Maxime Joanisse, Steven Monahan, Zaheer Quraishi, Benjamin Tordjman, Paul Xie,
-                Dongping Yu, Ellane Zhou.</p>
+            <p>SOEN 287 — Group Project — Maxime Joanisse, Steven Monahan, Zaheer Quraishi, Benjamin Tordjman, Paul Xie, Dongping Yu, Ellane Zhou.</p>
         </footer>
     </div>
-    &nbsp;
     <!-- easy to setup icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
