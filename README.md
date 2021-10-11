@@ -17,7 +17,7 @@ _**Goal:** create an online grocery store._
 - [x] checkout
 - [x] user login 
 - [x] sign up 
-- [ ] _backend_ product list
-- [ ] _backend_ edit product
+- [x] _backend_ product list
+- [x] _backend_ edit product
 - [ ] _backend_ user list
-- [ ] _backend_ edit user
+- [x] _backend_ edit user
