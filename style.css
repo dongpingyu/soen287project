@@ -460,6 +460,16 @@ button ion-icon {
 	box-shadow: 0px 1px 3px rgba(0,0,0,.20);
 }
 
+.cart-content ul li .cart-content-left .name {
+	font-weight: 800;
+	font-size: 1.2em;
+}
+
+.cart-content ul li .cart-content-left .email {
+	font-style: italic;
+	color: #333;
+}
+
 .cart-content .productbuy {
 	width: 30%;
 	box-shadow: 0px 1px 3px rgba(0,0,0,.20);
