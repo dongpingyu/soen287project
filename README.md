@@ -1,5 +1,6 @@
 # SOEN 287 — Group Project
-_**Goal:** create an online grocery store._
+* **Hosted:** http://benjamin.tordjman.com
+* _**Goal:** create an online grocery store._
 ## Group members:
 * Maxime Joanisse
 * Steven Monahan
@@ -19,5 +20,5 @@ _**Goal:** create an online grocery store._
 - [x] sign up 
 - [x] _backend_ product list
 - [x] _backend_ edit product
-- [ ] _backend_ user list
+- [x] _backend_ user list
 - [x] _backend_ edit user
